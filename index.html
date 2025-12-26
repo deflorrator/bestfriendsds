@@ -26,10 +26,10 @@
             transition: opacity 0.8s ease, visibility 0.8s ease;
         }
 
-        #loading-screen.fade-out {
-            opacity: 0;
-            visibility: hidden;
-        }
+            #loading-screen.fade-out {
+                opacity: 0;
+                visibility: hidden;
+            }
 
         .loading-content {
             text-align: center;
@@ -52,9 +52,11 @@
             0% {
                 text-shadow: 0 0 20px rgba(179, 136, 235, 0.8);
             }
+
             50% {
                 text-shadow: 0 0 30px rgba(179, 136, 235, 1), 0 0 40px rgba(123, 31, 162, 0.6);
             }
+
             100% {
                 text-shadow: 0 0 20px rgba(179, 136, 235, 0.8);
             }
@@ -93,18 +95,23 @@
             0% {
                 width: 0%;
             }
+
             20% {
                 width: 25%;
             }
+
             40% {
                 width: 50%;
             }
+
             60% {
                 width: 75%;
             }
+
             80% {
                 width: 90%;
             }
+
             100% {
                 width: 100%;
             }
@@ -199,6 +206,7 @@
                 transform: translateY(-50px) translateX(0px);
                 opacity: 0.8;
             }
+
             100% {
                 transform: translateY(100vh) translateX(30px);
                 opacity: 0;
@@ -256,16 +264,16 @@
             backdrop-filter: blur(5px);
         }
 
-        .tab-btn:hover {
-            background: var(--accent-electric);
-            box-shadow: var(--glow);
-            transform: translateY(-3px);
-        }
+            .tab-btn:hover {
+                background: var(--accent-electric);
+                box-shadow: var(--glow);
+                transform: translateY(-3px);
+            }
 
-        .tab-btn.active {
-            background: var(--accent-electric);
-            box-shadow: var(--glow);
-        }
+            .tab-btn.active {
+                background: var(--accent-electric);
+                box-shadow: var(--glow);
+            }
 
         /* Стили для основной секции */
         .main-section {
@@ -284,11 +292,11 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        .profile-container.active-tab {
-            display: grid;
-            opacity: 1;
-            transform: translateY(0);
-        }
+            .profile-container.active-tab {
+                display: grid;
+                opacity: 1;
+                transform: translateY(0);
+            }
 
         @media (max-width: 992px) {
             .profile-container {
@@ -309,8 +317,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .biography h2 {
@@ -332,27 +347,27 @@
             border-bottom: 1px solid rgba(179, 136, 235, 0.2);
         }
 
-        .bio-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
+            .bio-item:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
 
-        .bio-item h3 {
-            color: var(--accent-light);
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            font-family: 'Orbitron', sans-serif;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+            .bio-item h3 {
+                color: var(--accent-light);
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                font-family: 'Orbitron', sans-serif;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
 
-        .bio-item p {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
+            .bio-item p {
+                color: var(--text-gray);
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
 
         /* Правая колонка - фото профиля */
         .photo-section {
@@ -375,16 +390,16 @@
             position: relative;
         }
 
-        .main-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
+            .main-photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
 
-        .main-photo:hover img {
-            transform: scale(1.03);
-        }
+            .main-photo:hover img {
+                transform: scale(1.03);
+            }
 
         .photo-caption {
             text-align: center;
@@ -411,13 +426,13 @@
             text-align: center;
         }
 
-        .friends-gallery-section h2 {
-            font-family: 'Orbitron', sans-serif;
-            color: var(--accent-light);
-            font-size: 2.5rem;
-            margin-bottom: 2.5rem;
-            text-shadow: 0 0 15px rgba(179, 136, 235, 0.7);
-        }
+            .friends-gallery-section h2 {
+                font-family: 'Orbitron', sans-serif;
+                color: var(--accent-light);
+                font-size: 2.5rem;
+                margin-bottom: 2.5rem;
+                text-shadow: 0 0 15px rgba(179, 136, 235, 0.7);
+            }
 
         .gallery-intro {
             font-size: 1.3rem;
@@ -449,23 +464,23 @@
             cursor: pointer;
         }
 
-        .gallery-item:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: var(--glow);
-            border-color: var(--accent-electric);
-            z-index: 2;
-        }
+            .gallery-item:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: var(--glow);
+                border-color: var(--accent-electric);
+                z-index: 2;
+            }
 
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
+            .gallery-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
 
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
+            .gallery-item:hover img {
+                transform: scale(1.05);
+            }
 
         .photo-overlay {
             position: absolute;
@@ -511,10 +526,10 @@
             box-shadow: 0 5px 15px rgba(123, 31, 162, 0.4);
         }
 
-        .gallery-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--glow);
-        }
+            .gallery-btn:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--glow);
+            }
 
         /* Стили для модального окна галереи */
         .modal {
@@ -531,10 +546,10 @@
             flex-direction: column;
         }
 
-        .modal.active {
-            display: flex;
-            animation: fadeIn 0.3s ease;
-        }
+            .modal.active {
+                display: flex;
+                animation: fadeIn 0.3s ease;
+            }
 
         .modal-content {
             position: relative;
@@ -579,11 +594,11 @@
             border-radius: 50%;
         }
 
-        .close-modal:hover {
-            color: var(--accent-light);
-            transform: rotate(90deg);
-            background: rgba(123, 31, 162, 0.8);
-        }
+            .close-modal:hover {
+                color: var(--accent-light);
+                transform: rotate(90deg);
+                background: rgba(123, 31, 162, 0.8);
+            }
 
         .modal-nav {
             position: absolute;
@@ -604,18 +619,18 @@
             z-index: 2001;
         }
 
-        .modal-nav:hover {
-            background: var(--accent-electric);
-            transform: translateY(-50%) scale(1.15);
-        }
+            .modal-nav:hover {
+                background: var(--accent-electric);
+                transform: translateY(-50%) scale(1.15);
+            }
 
-        .modal-nav.prev {
-            left: 35px;
-        }
+            .modal-nav.prev {
+                left: 35px;
+            }
 
-        .modal-nav.next {
-            right: 35px;
-        }
+            .modal-nav.next {
+                right: 35px;
+            }
 
         .modal-counter {
             color: var(--text-white);
@@ -641,14 +656,14 @@
             margin: 0 auto;
         }
 
-        .timeline-section h2 {
-            font-family: 'Orbitron', sans-serif;
-            color: var(--accent-light);
-            font-size: 2.2rem;
-            margin-bottom: 2.5rem;
-            text-align: center;
-            text-shadow: 0 0 10px rgba(179, 136, 235, 0.5);
-        }
+            .timeline-section h2 {
+                font-family: 'Orbitron', sans-serif;
+                color: var(--accent-light);
+                font-size: 2.2rem;
+                margin-bottom: 2.5rem;
+                text-align: center;
+                text-shadow: 0 0 10px rgba(179, 136, 235, 0.5);
+            }
 
         .timeline {
             position: relative;
@@ -657,15 +672,15 @@
             padding-bottom: 2rem;
         }
 
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--accent-electric), var(--primary-purple));
-        }
+            .timeline::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 3px;
+                height: 100%;
+                background: linear-gradient(to bottom, var(--accent-electric), var(--primary-purple));
+            }
 
         @media (max-width: 768px) {
             .timeline::before {
@@ -682,18 +697,18 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        .timeline-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+            .timeline-item.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-left: calc(50% + 30px);
-        }
+            .timeline-item:nth-child(odd) .timeline-content {
+                margin-left: calc(50% + 30px);
+            }
 
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-right: calc(50% + 30px);
-        }
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-right: calc(50% + 30px);
+            }
 
         @media (max-width: 768px) {
             .timeline-item:nth-child(odd) .timeline-content,
@@ -742,20 +757,20 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
         }
 
-        .timeline-content h3 {
-            color: var(--accent-light);
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+            .timeline-content h3 {
+                color: var(--accent-light);
+                font-family: 'Orbitron', sans-serif;
+                font-size: 1.5rem;
+                margin-bottom: 0.8rem;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
 
-        .timeline-content p {
-            color: var(--text-gray);
-            font-size: 1.1rem;
-        }
+            .timeline-content p {
+                color: var(--text-gray);
+                font-size: 1.1rem;
+            }
 
         /* Стили для раздела Итог */
         .final-section {
@@ -765,13 +780,13 @@
             text-align: center;
         }
 
-        .final-section h2 {
-            font-family: 'Orbitron', sans-serif;
-            color: var(--accent-light);
-            font-size: 2.5rem;
-            margin-bottom: 2.5rem;
-            text-shadow: 0 0 15px rgba(179, 136, 235, 0.7);
-        }
+            .final-section h2 {
+                font-family: 'Orbitron', sans-serif;
+                color: var(--accent-light);
+                font-size: 2.5rem;
+                margin-bottom: 2.5rem;
+                text-shadow: 0 0 15px rgba(179, 136, 235, 0.7);
+            }
 
         .final-message {
             background: rgba(26, 26, 26, 0.7);
@@ -785,23 +800,23 @@
             overflow: hidden;
         }
 
-        .final-message::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(to right, var(--accent-electric), var(--primary-purple));
-        }
+            .final-message::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: linear-gradient(to right, var(--accent-electric), var(--primary-purple));
+            }
 
-        .final-message p {
-            font-size: 1.4rem;
-            color: var(--text-white);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
+            .final-message p {
+                font-size: 1.4rem;
+                color: var(--text-white);
+                line-height: 1.8;
+                margin-bottom: 1.5rem;
+                text-align: left;
+            }
 
         .final-signature {
             font-family: 'Orbitron', sans-serif;
@@ -827,13 +842,13 @@
             margin: 0 auto;
         }
 
-        .footer-content p {
-            font-size: 1.3rem;
-            color: var(--accent-light);
-            margin-bottom: 1.5rem;
-            font-family: 'Orbitron', sans-serif;
-            text-shadow: 0 0 10px rgba(179, 136, 235, 0.5);
-        }
+            .footer-content p {
+                font-size: 1.3rem;
+                color: var(--accent-light);
+                margin-bottom: 1.5rem;
+                font-family: 'Orbitron', sans-serif;
+                text-shadow: 0 0 10px rgba(179, 136, 235, 0.5);
+            }
 
         /* Дополнительные стили для сообщений */
         .loading-message {
@@ -862,47 +877,47 @@
             .loading-title {
                 font-size: 2.2rem;
             }
-            
+
             .loading-subtitle {
                 font-size: 1.3rem;
             }
-            
+
             .loading-progress {
                 width: 250px;
             }
-            
+
             .main-section, .timeline-section, .final-section, .friends-gallery-section {
                 padding: 2rem 1rem;
             }
-            
+
             .biography {
                 padding: 1.5rem;
             }
-            
+
             .site-title {
                 font-size: 2rem;
             }
-            
+
             .site-subtitle {
                 font-size: 1.2rem;
             }
-            
+
             .tab-btn {
                 padding: 0.6rem 1.2rem;
                 font-size: 1rem;
             }
-            
+
             .main-photo {
                 height: 350px;
             }
-            
+
             .modal-nav {
                 width: 50px;
                 height: 50px;
                 font-size: 1.5rem;
                 top: 50%;
             }
-            
+
             .close-modal {
                 width: 50px;
                 height: 50px;
@@ -910,42 +925,42 @@
                 top: 20px;
                 right: 20px;
             }
-            
+
             .footer-content p {
                 font-size: 1.1rem;
             }
-            
+
             .final-message {
                 padding: 2rem;
             }
-            
-            .final-message p {
-                font-size: 1.2rem;
-            }
-            
+
+                .final-message p {
+                    font-size: 1.2rem;
+                }
+
             .final-section h2 {
                 font-size: 2rem;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
                 gap: 1.2rem;
             }
-            
+
             .gallery-item {
                 height: 220px;
             }
-            
+
             .modal-content {
                 width: 98%;
                 height: 90vh;
             }
-            
+
             .modal-img-container {
                 height: 75vh;
                 padding: 10px;
             }
-            
+
             .friends-gallery-section h2 {
                 font-size: 2rem;
             }
@@ -955,30 +970,30 @@
             .loading-title {
                 font-size: 1.8rem;
             }
-            
+
             .loading-subtitle {
                 font-size: 1.1rem;
             }
-            
+
             .loading-progress {
                 width: 200px;
             }
-            
+
             .gallery-grid {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
                 gap: 1rem;
             }
-            
+
             .gallery-item {
                 height: 180px;
             }
-            
+
             .modal-nav {
                 width: 40px;
                 height: 40px;
                 font-size: 1.2rem;
             }
-            
+
             .close-modal {
                 width: 40px;
                 height: 40px;
@@ -1048,7 +1063,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Правая колонка - фото профиля (Семён) -->
             <div class="photo-section">
                 <div class="main-photo">
@@ -1057,7 +1072,7 @@
                 <div class="photo-caption">Семён Лыткин - лучший друг и брат по духу</div>
             </div>
         </div>
-        
+
         <!-- Биография Димы (скрыта по умолчанию) -->
         <div id="me-profile" class="profile-container">
             <!-- Левая колонка - биография -->
@@ -1090,7 +1105,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Правая колонка - фото профиля (Дима) -->
             <div class="photo-section">
                 <div class="main-photo">
@@ -1105,14 +1120,14 @@
     <section class="friends-gallery-section">
         <h2><i class="fas fa-images"></i> Наша общая галерея</h2>
         <div class="gallery-intro">
-            Здесь собраны наши лучшие совместные фотографии, которые хранят самые теплые моменты нашей дружбы. 
+            Здесь собраны наши лучшие совместные фотографии, которые хранят самые теплые моменты нашей дружбы.
             Каждая фотография — это история, каждая улыбка — это воспоминание. Всего у нас <span id="photo-count">25</span> фотографий!
         </div>
-        
+
         <div class="gallery-grid" id="gallery-grid">
             <!-- Фотографии будут вставлены через JavaScript -->
         </div>
-        
+
         <div class="gallery-btn-container">
             <button class="gallery-btn" id="openFriendsGallery">
                 <i class="fas fa-expand"></i> Открыть полноэкранную галерею
@@ -1132,7 +1147,7 @@
                     <p>Именно тогда, в этих годах, появились мы с тобой. любимка.)</p>
                 </div>
             </div>
-            
+
             <!-- Таймлайн элемент 2 -->
             <div class="timeline-item">
                 <div class="timeline-year">2011-2019</div>
@@ -1141,7 +1156,7 @@
                     <p>После переезда в Калининск, я и не представлял, что у меня будет такой друг как ты.</p>
                 </div>
             </div>
-            
+
             <!-- Таймлайн элемент 3 -->
             <div class="timeline-item">
                 <div class="timeline-year">2020-2024</div>
@@ -1150,7 +1165,7 @@
                     <p>Помню как бы сидели на разных партах в 5 классе и переглядывались друг на друга. Очень скучаю по временам в школе. Спасибо, что начал дружить со мной в тот сложный период в моей жизни)</p>
                 </div>
             </div>
-            
+
             <!-- Таймлайн элемент 4 -->
             <div class="timeline-item">
                 <div class="timeline-year">2024-2025</div>
@@ -1159,7 +1174,7 @@
                     <p>Легендарный 9 класс, больше всего скучаю по нему. Переживания, любовь, ОГЭ, угар на уроках. Скучаю.</p>
                 </div>
             </div>
-            
+
             <!-- Таймлайн элемент 5 -->
             <div class="timeline-item">
                 <div class="timeline-year">2025</div>
@@ -1222,32 +1237,32 @@
             const progressBar = document.querySelector('.loading-progress-bar');
             const counter = document.querySelector('.loading-counter');
             const body = document.body;
-            
+
             let progress = 0;
             const totalTime = 5000; // 5 секунд
             const intervalTime = 50; // обновление каждые 50 мс
             const steps = totalTime / intervalTime;
             const increment = 100 / steps;
-            
+
             // Обновление счетчика загрузки
             const interval = setInterval(() => {
                 progress += increment;
                 if (progress > 100) progress = 100;
-                
+
                 // Обновляем текст счетчика
                 counter.textContent = `${Math.round(progress)}%`;
-                
+
                 if (progress >= 100) {
                     clearInterval(interval);
-                    
+
                     // Добавляем класс для плавного исчезновения
                     loadingScreen.classList.add('fade-out');
-                    
+
                     // После завершения анимации скрываем экран загрузки
                     setTimeout(() => {
                         loadingScreen.style.display = 'none';
                         body.classList.add('loaded');
-                        
+
                         // Запускаем остальные функции сайта
                         initializeSite();
                     }, 800);
@@ -1264,47 +1279,47 @@
             function createSnow() {
                 const snowContainer = document.getElementById('snow-container');
                 const snowflakesCount = 12;
-                
+
                 for (let i = 0; i < snowflakesCount; i++) {
                     const snowflake = document.createElement('div');
                     snowflake.classList.add('snowflake');
                     snowflake.innerHTML = '❄';
-                    
+
                     const size = Math.random() * 12 + 6;
                     const startX = Math.random() * 100;
                     const duration = Math.random() * 25 + 20;
                     const delay = Math.random() * 15;
                     const opacity = Math.random() * 0.5 + 0.2;
                     const sway = Math.random() * 60 - 30;
-                    
+
                     snowflake.style.left = `${startX}vw`;
                     snowflake.style.fontSize = `${size}px`;
                     snowflake.style.opacity = opacity;
                     snowflake.style.animationDuration = `${duration}s`;
                     snowflake.style.animationDelay = `${delay}s`;
                     snowflake.style.zIndex = '1000';
-                    
+
                     const animationName = `fall-${Date.now()}-${i}`;
                     const keyframes = `
-                        @keyframes ${animationName} {
-                            0% {
-                                transform: translateY(-100px) translateX(0px);
-                                opacity: ${opacity};
+                            @keyframes ${animationName} {
+                                0% {
+                                    transform: translateY(-100px) translateX(0px);
+                                    opacity: ${opacity};
+                                }
+                                100% {
+                                    transform: translateY(100vh) translateX(${sway}px);
+                                    opacity: 0;
+                                }
                             }
-                            100% {
-                                transform: translateY(100vh) translateX(${sway}px);
-                                opacity: 0;
-                            }
-                        }
-                    `;
-                    
+                        `;
+
                     const style = document.createElement('style');
                     style.textContent = keyframes;
                     document.head.appendChild(style);
-                    
+
                     snowflake.style.animationName = animationName;
                     snowContainer.appendChild(snowflake);
-                    
+
                     setTimeout(() => {
                         if (snowflake.parentNode === snowContainer) {
                             snowflake.remove();
@@ -1322,18 +1337,18 @@
             // Переключение между профилями
             const tabButtons = document.querySelectorAll('.tab-btn');
             const profiles = document.querySelectorAll('.profile-container');
-            
+
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const tabId = button.getAttribute('data-tab');
-                    
+
                     tabButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
-                    
+
                     profiles.forEach(profile => {
                         profile.classList.remove('active-tab');
                     });
-                    
+
                     setTimeout(() => {
                         const selectedProfile = document.getElementById(`${tabId}-profile`);
                         if (selectedProfile) {
@@ -1343,35 +1358,35 @@
                 });
             });
 
-            // ВАШИ ФОТОГРАФИИ
+            // ВАШИ ФОТОГРАФИИ - теперь на GitHub!
             const friendsImages = [
-                "https://i.ibb.co/tp4DNC8f/1.jpg",
-                "https://i.ibb.co/NddYB9Bk/2.jpg",
-                "https://i.ibb.co/nq655WyX/3.jpg",
-                "https://i.ibb.co/Xxf8gTwY/4.jpg",
-                "https://i.ibb.co/jp6Md15/5.jpg",
-                "https://i.ibb.co/Z1f2ZVzB/6.jpg",
-                "https://i.ibb.co/ycs9ZNpV/7.jpg",
-                "https://i.ibb.co/q33ThY2S/8.jpg",
-                "https://i.ibb.co/rRYhxryr/9.jpg",
-                "https://i.ibb.co/xKj9Bx95/10.jpg",
-                "https://i.ibb.co/srXPp8Q/11.jpg",
-                "https://i.ibb.co/Txkwydkt/12.jpg",
-                "https://i.ibb.co/4RjnSCP4/13.jpg",
-                "https://i.ibb.co/Cpc5By5K/14.jpg",
-                "https://i.ibb.co/TD2ZbzPc/15.jpg",
-                "https://i.ibb.co/DPTmV8XY/16.jpg",
-                "https://i.ibb.co/QFDnD4qZ/17.jpg",
-                "https://i.ibb.co/9mwvYvTp/18.jpg",
-                "https://i.ibb.co/NgVtK0qS/19.jpg",
-                "https://i.ibb.co/676r12Rk/20.jpg",
-                "https://i.ibb.co/dwg9FFk8/21.jpg",
-                "https://i.ibb.co/Kc4HRwHC/22.jpg",
-                "https://i.ibb.co/ycL74MHB/23.jpg",
-                "https://i.ibb.co/605ZkYQJ/24.jpg",
-                "https://i.ibb.co/23MY336g/25.jpg"
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/1.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/2.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/3.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/4.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/5.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/6.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/7.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/8.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/9.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/10.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/11.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/12.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/13.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/14.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/15.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/16.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/17.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/18.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/19.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/20.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/21.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/22.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/23.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/24.jpg",
+                "https://raw.githubusercontent.com/deflorrator/bestfriendsds/main/images/25.jpg"
             ];
-            
+
             const friendsCaptions = [
                 "Наша совместная фотография #1",
                 "Наша совместная фотография #2",
@@ -1399,96 +1414,107 @@
                 "Наша совместная фотография #24",
                 "Наша совместная фотография #25"
             ];
-            
+
             let friendsCurrentIndex = 0;
             let workingImages = [];
             let workingCaptions = [];
 
-            // Функция для проверки загрузки изображения
-            function testImageLoad(src, index) {
-                return new Promise((resolve) => {
-                    const img = new Image();
-                    img.onload = () => resolve({ src, index, success: true });
-                    img.onerror = () => resolve({ src, index, success: false });
-                    img.src = src;
-                    
-                    // Таймаут 5 секунд
-                    setTimeout(() => {
-                        if (!img.complete) {
-                            resolve({ src, index, success: false });
-                        }
-                    }, 5000);
-                });
+            // Функция обновления счетчика фотографий
+            function updatePhotoCounter(count) {
+                const counterElement = document.getElementById('photo-count');
+                const totalSlidesElement = document.getElementById('friendsTotalSlides');
+
+                if (count > 0) {
+                    counterElement.textContent = count;
+                    totalSlidesElement.textContent = count;
+                } else {
+                    // Если ни одно фото не загрузилось
+                    counterElement.textContent = '0';
+                    totalSlidesElement.textContent = friendsImages.length;
+                }
             }
 
-            // Функция для создания сетки галереи
+            // Улучшенная функция создания галереи
             async function createGalleryGrid() {
                 const galleryGrid = document.getElementById('gallery-grid');
-                
-                // Показываем индикатор загрузки
-                galleryGrid.innerHTML = '<div class="loading-message">Загрузка фотографий...</div>';
-                
-                // Проверяем какие изображения загружаются
-                const testPromises = friendsImages.map((src, index) => testImageLoad(src, index));
-                const results = await Promise.all(testPromises);
-                
-                // Фильтруем только успешно загружаемые изображения
-                workingImages = [];
-                workingCaptions = [];
-                
-                results.forEach(result => {
-                    if (result.success) {
-                        workingImages.push(result.src);
-                        workingCaptions.push(friendsCaptions[result.index]);
-                    }
-                });
-                
-                if (workingImages.length === 0) {
-                    // Если ни одно изображение не загрузилось
-                    galleryGrid.innerHTML = '<div class="error-message">Не удалось загрузить фотографии. Пожалуйста, проверьте подключение к интернету.</div>';
-                    document.getElementById('photo-count').textContent = '0';
-                    return;
-                }
-                
-                // Создаем галерею только с рабочими изображениями
+
+                // Показываем сообщение о загрузке
+                galleryGrid.innerHTML = '<div class="loading-message"><i class="fas fa-spinner fa-spin"></i> Загружаем наши воспоминания...</div>';
+
+                // Очищаем галерею
                 galleryGrid.innerHTML = '';
-                
-                workingImages.forEach((imgSrc, index) => {
+
+                let successfullyLoaded = 0;
+
+                // Создаем элементы для каждой фотографии
+                for (let i = 0; i < friendsImages.length; i++) {
                     const galleryItem = document.createElement('div');
                     galleryItem.className = 'gallery-item';
-                    galleryItem.dataset.index = index;
-                    
-                    galleryItem.innerHTML = `
-                        <img src="${imgSrc}" alt="${workingCaptions[index]}" loading="lazy" 
-                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/4a0072/ffffff?text=Фото+${index+1}'">
-                        <div class="photo-overlay">
-                            <div class="photo-number">Фото ${index + 1}</div>
-                        </div>
-                    `;
-                    
-                    // Клик по миниатюре открывает соответствующее фото в модальном окне
+                    galleryItem.dataset.index = i;
+
+                    // Создаем изображение
+                    const img = document.createElement('img');
+                    img.loading = 'lazy'; // Ленивая загрузка для производительности
+                    img.alt = `Наше совместное фото ${i + 1}`;
+
+                    // Пытаемся загрузить фото
+                    img.src = friendsImages[i];
+
+                    // Если фото загрузилось успешно
+                    img.onload = function () {
+                        successfullyLoaded++;
+                        console.log(`Фото ${i + 1} загружено: ${friendsImages[i]}`);
+
+                        // Обновляем счетчик
+                        updatePhotoCounter(successfullyLoaded);
+                    };
+
+                    // Если возникла ошибка загрузки
+                    img.onerror = function () {
+                        console.error(`Ошибка загрузки фото ${i + 1}: ${friendsImages[i]}`);
+
+                        // Используем красивую заглушку с номером фото
+                        this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+                                <rect width="400" height="300" fill="%234a0072"/>
+                                <text x="50%" y="50%" font-family="Arial" font-size="24" fill="white" text-anchor="middle" dy=".3em">Фото ${i + 1}</text>
+                            </svg>`;
+                    };
+
+                    // Добавляем изображение в элемент
+                    galleryItem.appendChild(img);
+
+                    // Добавляем оверлей с номером
+                    const overlay = document.createElement('div');
+                    overlay.className = 'photo-overlay';
+                    overlay.innerHTML = `<div class="photo-number">Фото ${i + 1}</div>`;
+                    galleryItem.appendChild(overlay);
+
+                    // Клик для открытия в модальном окне
                     galleryItem.addEventListener('click', () => {
-                        friendsCurrentIndex = index;
+                        friendsCurrentIndex = i;
                         updateFriendsModalImage();
                         document.getElementById('friendsGalleryModal').classList.add('active');
                         document.body.style.overflow = 'hidden';
                     });
-                    
+
+                    // Добавляем элемент в сетку
                     galleryGrid.appendChild(galleryItem);
-                });
-                
-                // Обновляем счетчик фотографий
-                const photoCount = workingImages.length;
-                document.getElementById('photo-count').textContent = photoCount;
-                document.getElementById('friendsTotalSlides').textContent = photoCount;
-                
-                console.log(`Загружено ${workingImages.length} из ${friendsImages.length} фотографий`);
+                }
+
+                // Инициализируем рабочие массивы
+                workingImages = [...friendsImages];
+                workingCaptions = [...friendsCaptions];
+
+                // Через 3 секунды показываем сколько фото загрузилось
+                setTimeout(() => {
+                    updatePhotoCounter(successfullyLoaded);
+                }, 3000);
             }
 
             // Функция для обновления изображений в модальном окне
             function updateFriendsModalImage() {
                 const imgElement = document.getElementById('friendsModalImg');
-                
+
                 if (workingImages.length > 0) {
                     const safeIndex = friendsCurrentIndex < workingImages.length ? friendsCurrentIndex : 0;
                     imgElement.src = workingImages[safeIndex];
@@ -1496,10 +1522,10 @@
                     document.getElementById('friendsCurrentSlide').textContent = safeIndex + 1;
                     document.getElementById('friendsTotalSlides').textContent = workingImages.length;
                     document.getElementById('photoInfo').textContent = workingCaptions[safeIndex] || `Наша совместная фотография #${safeIndex + 1}`;
-                    
+
                     // Добавляем обработчик ошибки для модального изображения
-                    imgElement.onerror = function() {
-                        this.src = 'https://via.placeholder.com/800x600/4a0072/ffffff?text=Фото+не+загружено';
+                    imgElement.onerror = function () {
+                        this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><rect width="800" height="600" fill="%234a0072"/><text x="50%" y="50%" font-family="Arial" font-size="32" fill="white" text-anchor="middle" dy=".3em">Фото не загружено</text></svg>';
                         this.alt = 'Фото не загружено';
                     };
                 }
@@ -1529,7 +1555,7 @@
                     updateFriendsModalImage();
                 }
             });
-            
+
             document.getElementById('friendsPrevBtn').addEventListener('click', () => {
                 if (workingImages.length > 0) {
                     friendsCurrentIndex = (friendsCurrentIndex - 1 + workingImages.length) % workingImages.length;
@@ -1543,7 +1569,7 @@
                     document.getElementById('friendsGalleryModal').classList.remove('active');
                     document.body.style.overflow = 'auto';
                 }
-                
+
                 // Навигация по галерее с помощью клавиш
                 if (document.getElementById('friendsGalleryModal').classList.contains('active')) {
                     if (workingImages.length > 0) {
@@ -1561,7 +1587,7 @@
             // Закрытие модального окна по клику вне области
             document.addEventListener('click', (e) => {
                 const friendsModal = document.getElementById('friendsGalleryModal');
-                
+
                 if (e.target === friendsModal) {
                     friendsModal.classList.remove('active');
                     document.body.style.overflow = 'auto';
@@ -1570,43 +1596,43 @@
 
             // Анимация появления элементов при скролле
             const timelineItems = document.querySelectorAll('.timeline-item');
-            
+
             function checkScroll() {
                 timelineItems.forEach(item => {
                     const itemTop = item.getBoundingClientRect().top;
                     const windowHeight = window.innerHeight;
-                    
+
                     if (itemTop < windowHeight * 0.85) {
                         item.classList.add('visible');
                     }
                 });
             }
-            
+
             // Инициализация после загрузки
             checkScroll();
             createGalleryGrid(); // Создаем галерею при загрузке
-            
+
             // Предзагрузка фотографий профилей
             const preloadImages = [
                 'https://i.ibb.co/DHN4pcrB/semen.jpg',
                 'https://i.ibb.co/vCXb6qNy/dima.jpg'
             ];
-            
+
             preloadImages.forEach(src => {
                 const img = new Image();
                 img.src = src;
             });
-            
+
             window.addEventListener('scroll', checkScroll);
 
             // Эффекты при наведении на интерактивные элементы
             const interactiveElements = document.querySelectorAll('.tab-btn, .gallery-btn');
-            
+
             interactiveElements.forEach(element => {
                 element.addEventListener('mouseenter', () => {
                     element.style.transform = 'translateY(-5px)';
                 });
-                
+
                 element.addEventListener('mouseleave', () => {
                     element.style.transform = 'translateY(0)';
                 });
